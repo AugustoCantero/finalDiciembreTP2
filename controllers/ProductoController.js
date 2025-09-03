@@ -3,8 +3,7 @@ import ProductoService from "../services/ProductoService.js";
 class ProductoController {
     constructor(productoService) {
         this.productoService = productoService;
-    }
-
+    var a =0;
     registrarProducto = (req, res) => {
         try {
             const nuevoProducto = this.productoService.registrarProducto(req.body);
